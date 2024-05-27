@@ -1,6 +1,12 @@
 {
-    "name": "Roleplay Toolset",
+    "display_name": "Roleplay Toolset",
+    "loading_order": 100,
+    "requires": [],
+    "optional": [],
+    "js": "dist/index.js",
+    "css": "",
+    "author": "XMK",
     "version": "1.0.0",
-    "description": "A toolset for roleplaying with buttons for various events.",
-    "main": "dist/index.js"
+    "homePage": "https://github.com/privatesvx/Roleplay-Toolset-Extension",
+    "auto_update": true
 }
