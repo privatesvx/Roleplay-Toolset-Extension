@@ -1,12 +1,6 @@
 {
-    "display_name": "Template Extension",
-    "loading_order": 1,
-    "requires": [],
-    "optional": [],
-    "js": "dist/index.js",
-    "css": "",
-    "author": "Cohee1207",
+    "name": "Roleplay Toolset",
     "version": "1.0.0",
-    "homePage": "https://github.com/Cohee1207/Extension-ReactTemplate",
-    "auto_update": true
+    "description": "A toolset for roleplaying with buttons for various events.",
+    "main": "dist/index.js"
 }
