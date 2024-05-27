@@ -2,38 +2,6 @@ import React from 'react';
 import { createRoot } from 'react-dom/client';
 import App from './App';
 import './styles.css';
-import { SlashCommandParser } from '../../../SlashCommandParser.js';
-import { SlashCommand } from '../../../SlashCommand.js';
-import { ARGUMENT_TYPE, SlashCommandArgument } from '../../../SlashCommandArgument.js';
-
-// Register the slash command
-SlashCommandParser.addCommandObject(SlashCommand.fromProps({
-    name: 'unexpectedevent',
-    callback: (namedArgs, unnamedArgs) => {
-	    const eventDescription = unnamedArgs.join(' ');
-        console.log(eventDescription);
-    },
-    aliases: ['uev'],
-    returns: 'Introduces an unexpected event into the roleplay.',
-    unnamedArgumentList: [
-        SlashCommandArgument.fromProps({
-            description: 'Description of the unexpected event',
-            typeList: [ARGUMENT_TYPE.STRING],
-            isRequired: true,
-        }),
-    ],
-    helpString: `
-        <div>
-            Introduces an unexpected event into the roleplay.
-            <strong>Example:</strong>
-            <ul>
-                <li>
-                    <pre><code class="language-stscript">/unexpectedevent A sudden storm hits the village.</code></pre>
-                </li>
-            </ul>
-        </div>
-    `,
-}));
 
 const buttonContainer = document.getElementById('extensionsMenu');
 const buttonElement = document.createElement('div');
